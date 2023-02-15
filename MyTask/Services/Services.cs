@@ -46,7 +46,9 @@ namespace MyTask.Services
         }
         public static void PrintChildsTree(Element parentElement, ref string tab)
         {
+            // Выводим данные родительского элемента
             Console.WriteLine($"{tab}{parentElement.Id} {parentElement.ParentId} {parentElement.Text}");
+            // При наличии дочерних элементов рекурсией выводим их данные
             if (parentElement.Childrens.Count != 0)
             {
                 foreach (var child in parentElement.Childrens)
