@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4cjiDnhB2/pj4M/MysPU7ddxdYN2craaUQ3wh/3JujU3xtKAFLw2y4+F+jQ2RMrv1DOdYzCWOjKy7AAYyK5WsQ==",
+  "success": true,
+  "projectFilePath": "/Users/admin/Projects/MyTask/MyTask/MyTask.csproj",
+  "expectedPackageFiles": [
+    "/Users/admin/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
