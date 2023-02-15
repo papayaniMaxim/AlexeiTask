@@ -11,6 +11,7 @@ namespace MyTask.Models
         public int ParentId { set; get; }
         [Index(2)]
         public string Text { set; get; } = "";
+        public List<Element> Childrens = new List<Element>();
     }
 }
 

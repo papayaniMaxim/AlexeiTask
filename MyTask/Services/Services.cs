@@ -3,8 +3,8 @@ using MyTask.Models;
 
 namespace MyTask.Services
 {
-	public class ElementsServices
-	{
+    public class ElementsServices
+    {
         public static void PrintElementsTree(in List<Element> elementsList)
         {
             // Группируем отсортированные элементы по ключу ParentId
@@ -44,7 +44,20 @@ namespace MyTask.Services
                 }
             }
         }
+        public static void PrintChildsTree(Element parentElement, ref string tab)
+        {
+            Console.WriteLine($"{tab}{parentElement.Id} {parentElement.ParentId} {parentElement.Text}");
+            if (parentElement.Childrens.Count != 0)
+            {
+                foreach (var child in parentElement.Childrens)
+                {
+                    tab += " ";
+                    PrintChildsTree(child, ref tab);
+                    tab = tab.Remove(0, 1);
+                }
+            }
 
+        }
 
     }
 }
